@@ -16,74 +16,85 @@ h4{
     background-color: brown;
 }
 
-p{
-    border: 1px solid black;
 
-}
 .row{
-    margin-top: 100px;
+    width: 100%;
+    height: auto;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    flex-flow: wrap;
+} 
+.a{
 
-}
-.a {
-  background-color: gray;
-  width: 33%;
-  float: left;
-  height: fit-content;
-  padding: 10px;
+   
+    height: max-content;
+    background: gray;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 25px;
 
 }
 .b{
-    padding: 10px;
-    width: 33%;
-    height: fit-content; 
-  background-color: gray;
-  margin-inline-start: 480px;
-}
 
+
+    height: max-content;
+    background: gray;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+
+}
 .c{
-    padding: 10px;
-    margin-right: 20px;
-    width: 33%;
-    height: fit-content;
-    position: relative;
-    top: -205px;
-    left: 965px;
-  background-color: gray;
+
+  
+    height: max-content;
+    background: gray;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+
 }
 
-@media(min-width:1200px){
-    .a  {
-        width: 33.33%
-    }
-    .b  {
-        width: 33.33%
-    }
-    .c  {
-        width: 33.33%
-    }
-    
-}
-
-@media(min-width:992px)and(max-width:1199px) {
+@media (min-width:992px) {
     .a {
-        width: 50%;
+        width: 30%;
+        
     }
-     
     .b{
-        width: 50%;
+        width: 30%;
     }
+    .c{
+        width: 30%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .a {
+        width: 40%;
+}
+
+.b{
+    width: 40%;
+}
+    .c{
+        width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .a {
+        width: 100%;
+    }
+    .b{
+        width: 100%;
+    } 
     .c{
         width: 100%;
         
     }
 }
 
-@media(max-width:992px){
-    .a , .b , .c {
-        width: 100%;
-        
-        
-    }
-} 
 
