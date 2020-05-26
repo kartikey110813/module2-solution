@@ -10,12 +10,20 @@ h1{
     font-style: oblique;
 }
 
-h4{
+.h42{
    
+text-align: end;
+    background-color: brown;  
+}
+.h41{
     text-align: end;
-    background-color: brown;
+    background-color: pink; 
 }
 
+.h43{
+text-align: end;
+    background-color: yellow;
+}
 
 .row{
     width: 100%;
